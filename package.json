@@ -1,0 +1,22 @@
+{
+  "name": "rollup-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup src/main.js -o dist/bundle.js -f cjs ",
+    "start": "node dist/bundle.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanKr/rollup-playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanKr/rollup-playground/issues"
+  },
+  "homepage": "https://github.com/NathanKr/rollup-playground#readme"
+}
