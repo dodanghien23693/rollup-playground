@@ -25,8 +25,6 @@ The following take all the files that main.js depend on and create using CommonJ
 
 ```
 
-note that running node src/main.js will fail with an error 'Cannot use import statement outside a module'
-
 
 <h2>build with rollup.config.js</h2>
 some time using config file is easier
@@ -56,6 +54,36 @@ remark - this is working is you add the following to package.json
 ```
 
   "type": "module",
+
+```
+
+<h2>using dynamic import</h2>
+some time you do not want one bundle file instead you want code split. this can be done using dynamic import from side e.g.
+
+```
+
+const { mul } = await import("./utils-b.js");
+
+```
+
+and on the other side . es is used because the format cjs can not handle it
+
+```
+
+    "build1": "rollup src/main-with-dynamic-import.js -d dist1 -f es ",
+
+
+```
+
+the result is dist1 directory with two files : 
+main-with-dynamic-import.js and utils-b-281616f2.js
+
+<h2>watch mode : -w</h2>
+this will re-bundle on changes
+
+```
+
+"build-with-config-watch": "rollup -c -w",
 
 ```
 

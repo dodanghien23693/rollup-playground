@@ -1,3 +1,3 @@
-import {sum} from './utils.js'
+import { sum } from "./utils-a.js";
 
-console.log(`sum(1,2) : ${sum(1,2)}`);
+console.log(`sum(11,2) : ${sum(11, 2)}`);

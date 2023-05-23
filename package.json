@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "build": "rollup src/main.js -o dist/bundle.js -f cjs ",
+    "build1": "rollup src/main-with-dynamic-import.js -d dist1 -f es ",
     "build-with-config": "rollup -c",
+    "build-with-config-watch": "rollup -c -w",
     "start": "node dist/bundle.js",
     "dev" : "node src/main"
 
