@@ -2,10 +2,13 @@
   "name": "rollup-playground",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "rollup src/main.js -o dist/bundle.js -f cjs ",
-    "start": "node dist/bundle.js"
+    "build-with-config": "rollup -c",
+    "start": "node dist/bundle.js",
+    "dev" : "node src/main"
 
   },
   "repository": {
