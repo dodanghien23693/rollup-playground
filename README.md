@@ -107,3 +107,13 @@ than invoke
 npm run dev
 
 ```
+
+<h2>Using import for npm package</h2>
+
+add in rollup.config.js
+
+```
+	external: ['dayjs']
+```
+
+note that this will NOT change dist directory . dayjs will be used fron regular node_modules directory. This may be good for development but not production

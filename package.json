@@ -10,8 +10,7 @@
     "build-with-config": "rollup -c",
     "build-with-config-watch": "rollup -c -w",
     "start": "node dist/bundle.js",
-    "dev" : "node src/main"
-
+    "dev": "node --watch dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/NathanKr/rollup-playground/issues"
   },
-  "homepage": "https://github.com/NathanKr/rollup-playground#readme"
+  "homepage": "https://github.com/NathanKr/rollup-playground#readme",
+  "dependencies": {
+    "dayjs": "^1.11.8"
+  }
 }
